@@ -20,23 +20,28 @@ header .logo_img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 25px;
 }
 header .navheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  padding-top: 50px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-left: 25px;
+  padding: 25px;
+  width: 80%;
+  height: auto;
 }
 header .navheader li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   list-style: none;
-  margin: 0 25px 0 25px;
+  margin: 25px 10px 10px 10px;
   padding: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -48,10 +53,10 @@ header .navheader li a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
-  width: 85px;
+  width: 60px;
+  margin: 20px;
 }
 main {
-  padding-top: 50px;
   min-width: 320px;
   width: 100%;
   height: auto;
@@ -67,10 +72,12 @@ main .main__img img {
   overflow: hidden ;
 }
 .main__servicios {
-  border: solid 2px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  display: in;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .main__servicios h1 {
   font-size: 2rem;
@@ -81,13 +88,10 @@ main .main__img img {
   width: 100%;
 }
 .main_servicios_contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
+  height: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: auto;
 }
 .info_1 {
   width: 300px;
@@ -95,13 +99,15 @@ main .main__img img {
   height: 300px;
   padding: 20px;
   color: red;
-  margin-top: 25px;
+  margin: 10px 10px 10px 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 25px;
   font-size: 1.6rem;
   text-align: center;
   list-style: none;
+  display: inline-block;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #b3b3b3;
 }
 .info_1 h2 {
   text-transform: uppercase;
@@ -117,11 +123,14 @@ main .main__img img {
   height: 300px;
   padding: 20px;
   color: red;
-  margin-top: 25px;
+  margin: 10px 10px 10px 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 1.6rem;
   text-align: center;
+  display: inline-block;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #b3b3b3;
 }
 .info_2 h2 {
   text-transform: uppercase;
@@ -137,9 +146,12 @@ main .main__img img {
   height: 300px;
   padding: 20px;
   color: red;
-  margin-top: 25px;
+  margin: 10px 10px 10px 10px;
   font-size: 1.6rem;
   text-align: center;
+  display: inline-block;
+  border-radius: 20px 20px 20px 20px;
+  border: 3px solid #b3b3b3;
 }
 .info_3 h2 {
   text-transform: uppercase;
@@ -148,4 +160,19 @@ main .main__img img {
 .info_3 li {
   list-style: none;
   line-height: 1.9rem;
+}
+.main__informativo {
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+}
+.main__informativo .main__izquierda {
+  width: 50%;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__informativo .informativo_derecha {
+  width: 50%;
 }
