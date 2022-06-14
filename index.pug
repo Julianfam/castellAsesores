@@ -1,27 +1,15 @@
 
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Castell Asesores
-        link(rel="stylesheet", href="/css/styles.css")
+    include head.pug
     body 
-        header 
-            div.logo_img: img(src="/img/logo_castell.jpg", alt="Logo Castell Asesores")
-            .navheader 
-                ul
-                    li: a(href="/index.html") Inicio   
-                    li: a(href="/index.html") Nosotros
-                    li: a(href="/index.html") Clientes
-                    li: a(href="/index.html") contacto
-
+        header
+            include main-nav.pug
         main 
-            div.main__img: img(src="/img/castellbanner.jpg", alt="Imagen Principal")
+            div.main__img: img(src="/img/castellbanner.jpg", alt="main-image",class="main-image")
+            h1 Nuestros servicios
             div.main__servicios
-                h1 Nuestros servicios 
-                article.main_servicios_contenedor
+               -//article.main_servicios_contenedor//*
                     section.info_1
                         h2 Sistemas de Gestión
                         ul 
@@ -56,13 +44,15 @@ html(lang="en")
                             li  Capacitaciones Manejo Operativo Y Administrativo Empresarial  
                             li  Estructuración Organizacional
 
-                div.main__informativo
-                    h1 Nuestros servicios 
-                    article.informativo_izquierda 
-                        section.info_1
-                            h2 Nuestra compromiso es proveer la mejor solución
-                            h3 Sistemas de Gestión 
-                    article.informativo_derecha 
-                        section
-                            div.img img(src="/img/2c8ac6318d0ebf4206e6f0e6c802929e.jpg", alt="")                      
+            div.main__informativo
+                article.informativo_izquierda 
+                    section.info_izquierda
+                        p.textoprincipal Nuestro compromiso es proveer la mejor solución
+                        p.textosecundario Somos una empresa con responsabilidad social, al servicio de nuestros clientes, orientandolos con conocimiento, experiencia y vivencias en consultorías, asesorías, auditorías y formación en sistemas de gestión con criterio técnico, profesional, ético y moral.
+                article.info_derecha 
+                    section
+                        img(src="/img/2c8ac6318d0ebf4206e6f0e6c802929e.jpg", alt="")                      
         footer 
+            include footer.pug 
+                
+
