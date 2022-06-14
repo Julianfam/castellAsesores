@@ -236,8 +236,8 @@ footer .contenedor-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 25px;
 }
 footer .contenedor-footer a {
-  margin: 25px;
+  margin: 15px 25px 25px 25px;
 }
